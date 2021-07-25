@@ -1,13 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import { Header } from './components/Header/Header'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Home } from './pages/Home'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { Shop } from './pages/Shop'
 
+const queryClient = new QueryClient()
 function App() {
   return (
-    <div className="App font-bold">
-      Grow above and beyond
-    </div>
-  );
+    <QueryClientProvider client={queryClient}>
+      <div className="App ">
+        <Router>
+          <Switch>
+            <Route path="/shop">
+              <Header />
+              <Shop />
+            </Route>
+            <Route path="/">
+              <Header />
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    </QueryClientProvider>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: 'center';
+    align-self: 'center';
+    width: '100%';
+  }
+
+  .light {
+    fill: #ffffff;
+  }
+  .dark{
+    fill: #000000;
+  }
+  .xxs {
+    width: 0.5rem;
+  }
+  .xs {
+    width: 1rem;
+  }
+  .s {
+    width: 1.5rem;
+  }
+  .m {
+    width: 2rem;
+  }
+  .l {
+    width: 2.5rem;
+  }
+  .xl {
+    width: 3rem;
+  }
+  .xxl {
+    width: 3.5rem;
+  }
+  .xxxl {
+    width: 4rem;
+  }
+  .exception{
+      width: 7.613rem;
+  }
+  .auto {
+    width: '100%';
+  }

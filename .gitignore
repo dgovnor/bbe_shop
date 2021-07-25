@@ -12,6 +12,8 @@
 /build
 
 # misc
+IconNames.ts
+.storybook
 .DS_Store
 .env.local
 .env.development.local
